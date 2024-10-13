@@ -28,6 +28,14 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Styles for the header image */
+header img {
+    display: block; /* Ensures no gap below the image */
+    max-width: 100%; /* Responsive design */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+}
+
 /* Style the main intro section */
 .intro {
     padding: 50px 0;
@@ -41,4 +49,5 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.int
+/* Continue with the rest of your CSS... */
+
