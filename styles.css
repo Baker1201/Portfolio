@@ -1,12 +1,8 @@
 body {
     margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding around the body */
+    padding: 60px; /* Add padding around the body */
     font-family: 'Cormorant Garamond', serif; /* Apply the font */
     background-color: #f8f8f8; /* Optional: Set a background color */
-}
-
-header {
-    padding: 20px; /* Add padding within the header */
 }
 
 header nav ul {
