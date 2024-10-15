@@ -18,6 +18,7 @@
 
     nav ul li {
       margin: 0 20px;
+      position: relative; /* Ensure dropdown is positioned correctly */
     }
 
     nav ul li a {
@@ -31,26 +32,73 @@
     nav ul li a:hover {
       color: #0073e6; /* Change color on hover */
     }
+
+    /* Dropdown Styles */
+    .dropdown-content {
+      display: none; /* Hide dropdown content by default */
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    nav ul li:hover .dropdown-content {
+      display: block; /* Show dropdown on hover */
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Styles for the header image */
+    header img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Style the main intro section */
+    .intro {
+      padding: 50px 0;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      background-color: #f8f8f8;
+    }
   </style>
 </head>
 <body>
 <header>
     <img src="https://ElizabethBakerEditor.github.io/Portfolio/pexels-therato-1933239.jpg" alt="Beautiful minimalist image" style="width: 100%; max-height: 400px; object-fit: cover; margin: 0 auto;">
     <nav>
-    <ul>
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="b2b-experience.html">B2B Experience</a></li>
         <li><a href="fiction-editing-services.html">Fiction Editing Services</a></li>
         <li><a href="#contact">Contact</a></li>
-       <li>
-    <a href="#" class="dropdown">Other</a>
-    <ul class="dropdown-content">
-        <li><a href="https://elizabethhbaker.wordpress.com" target="_blank">Music Blog</a></li>
-        <li><a href="https://docs.google.com/document/d/16-5XWPpVtsYut0G0MglSNKJAdRoN5DLL/edit?usp=share_link&ouid=106033395613490057097&rtpof=true&sd=true" target="_blank">Literature Dissertation</a></li>
-    </ul>
-</li>
-</nav>
-
+        <li>
+          <a href="#" class="dropdown">Other</a>
+          <ul class="dropdown-content">
+            <li><a href="https://elizabethhbaker.wordpress.com" target="_blank">Music Blog</a></li>
+            <li><a href="https://docs.google.com/document/d/16-5XWPpVtsYut0G0MglSNKJAdRoN5DLL/edit?usp=share_link&ouid=106033395613490057097&rtpof=true&sd=true" target="_blank">Literature Dissertation</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 </header>
 
 <section id="home">
@@ -68,14 +116,13 @@
 
 <section id="portfolio">
     <h2>Portfolio</h2>
-      <div class="portfolio-item">
+    <div class="portfolio-item">
         <h3><a href="b2b-experience.html">B2B Magazines</a></h3>
         <p>Lead editor on the highest-grossing magazine issue of 2024, combining strategic content sourcing with market awareness.</p>
-      </div>
-      <div class="portfolio-item">
-        <h3><a href="FictionEditing.html"><h3>Fiction Editing</a></h3>
+    </div>
+    <div class="portfolio-item">
+        <h3><a href="FictionEditing.html">Fiction Editing</a></h3>
         <p>Worked on developing a rich, immersive fantasy world, focusing on plot consistency and world-building.</p>
-      </div>
     </div>
 </section>
 
