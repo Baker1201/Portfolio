@@ -43,7 +43,8 @@
       z-index: 1;
     }
 
-    nav ul li:hover .dropdown-content {
+    /* Show the dropdown content on hover */
+    li:hover .dropdown-content {
       display: block; /* Show dropdown on hover */
     }
 
@@ -91,7 +92,7 @@
         <li><a href="FictionEditing.html">Fiction Editing Services</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="#" class="dropdown">Other</a>
+          <a href="javascript:void(0)" class="dropdown">Other</a> <!-- Removed "#" link -->
           <ul class="dropdown-content">
             <li><a href="https://elizabethhbaker.wordpress.com" target="_blank">Music Blog</a></li>
             <li><a href="https://docs.google.com/document/d/16-5XWPpVtsYut0G0MglSNKJAdRoN5DLL/edit?usp=share_link&ouid=106033395613490057097&rtpof=true&sd=true" target="_blank">Literature Dissertation</a></li>
@@ -149,3 +150,4 @@
 </footer>
 </body>
 </html>
+
