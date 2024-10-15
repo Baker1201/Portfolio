@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiction Editing Services - Elizabeth Baker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      margin: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0073e6; /* Use the same blue as hover on links */
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .portfolio-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .portfolio-item {
+      margin: 10px 0;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 600px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+<header>
+    <img src="https://ElizabethBakerEditor.github.io/Portfolio/pexels-therato-1933239.jpg" alt="Beautiful minimalist image" style="width: 100%; max-height: 400px; object-fit: cover; margin: 0 auto;">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="b2b-experience.html">B2B Experience</a></li>
+            <li><a href="fiction-editing-services.html">Fiction Editing Services</a></li> <!-- Link to this new page -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="intro">
+      <h1>Fiction Editing Services</h1>
+      <p>Welcome to my Fiction Editing Services! With a background in B2B publishing and freelance fiction editing, I bring a strong editorial eye and passion for storytelling to every project.</p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio Highlights</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <h3>Romance Novel Editing (Freelance Project)</h3>
+        <p>Provided developmental editing for a romance novel, focusing on refining character arcs, enhancing emotional depth, and ensuring consistency in narrative pacing.</p>
+      </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Fiction Editing Services</h2>
+    <p>I offer a range of fiction editing services tailored to meet your manuscript’s needs, whether you're at the beginning of your writing journey or ready for final polish.</p>
+    <ul>
+      <li><strong>Developmental Editing:</strong> A big-picture look at your manuscript, focusing on plot structure, character development, pacing, and narrative flow.</li>
+      <li><strong>Line Editing:</strong> Fine-tuning your writing by focusing on sentence structure, tone, and flow, ensuring that your language shines and the narrative voice is clear and engaging.</li>
+      <li><strong>Copyediting:</strong> Correcting grammar, punctuation, spelling, and consistency, ensuring your manuscript is polished and error-free.</li>
+      <li><strong>Manuscript Evaluation:</strong> A comprehensive evaluation of your manuscript with detailed feedback on its strengths and areas for improvement.</li>
+    </ul>
+</section>
+
+<section id="key-changes">
+    <h2>Key Changes Made & Why</h2>
+    <ul>
+      <li><strong>Clarity and Flow:</strong> Corrected spelling and grammatical errors to improve readability and smooth the flow of the narrative.</li>
+      <li><strong>Character Depth:</strong> Explored anxiety as a character, integrating panic attack sensations to establish a connection early while maintaining the tension of an assassination attempt.</li>
+      <li><strong>Pacing and Tension:</strong> Intensified the narrative pacing, making M’s internal conflict more palpable.</li>
+      <li><strong>Descriptive Precision:</strong> Replaced vague descriptions with detailed, evocative imagery to enhance action and connection to M’s inner turmoil.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Let’s Work Together!</h2>
+    <p>Ready to take your manuscript to the next level? Contact me today for a consultation and let’s make your fiction project shine!</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Elizabeth Baker. All rights reserved.</p>
+</footer>
+</body>
+</html>
