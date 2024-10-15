@@ -47,6 +47,7 @@ header img {
 .intro h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    background-color: #f8f8f8;
 }
 
 /* Continue with the rest of your CSS... */
