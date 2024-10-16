@@ -13,6 +13,7 @@ header nav ul {
     background-color: #333;
     display: flex; /* Flexbox to ensure spacing */
     justify-content: center; /* Center the navigation */
+    text-align: center; /* Ensure text alignment is centered */
 }
 
 header nav ul li {
@@ -26,6 +27,8 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px; /* Added padding for better spacing */
+    display: inline-block; /* Ensures the entire link area is clickable */
+    text-align: center; /* Center-aligns text */
 }
 
 header nav ul li a:hover {
@@ -77,4 +80,26 @@ header img {
     font-size: 3em;
     margin-bottom: 10px;
     background-color: #f8f8f8;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px;
+        margin: 0;
+        align-items: center; /* Center the stacked items */
+        width: 100%; /* Ensure the navbar takes full width */
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Add space between each menu item */
+        width: 100%; /* Make sure the items take the full width of the navbar */
+        text-align: center; /* Ensure the text is centered on mobile */
+    }
+
+    header nav ul li a {
+        font-size: 1.5em; /* Increase font size for better tap targets */
+        width: 100%; /* Ensures the clickable area covers the entire width */
+    }
 }
