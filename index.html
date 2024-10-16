@@ -33,6 +33,24 @@
       color: #0073e6; /* Change color on hover */
     }
 
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px;
+        margin: 0;
+        align-items: center; /* Center the stacked items */
+      }
+
+      nav ul li {
+        margin: 10px 0; /* Add space between each menu item */
+      }
+
+      nav ul li a {
+        font-size: 1.5em; /* Increase font size for better tap targets */
+      }
+    }
+
     /* Dropdown Styles */
     .dropdown-content {
       display: none; /* Hide dropdown content by default */
@@ -82,6 +100,8 @@
     }
   </style>
 </head>
+
+  
 <body>
 <header>
     <img src="https://ElizabethBakerEditor.github.io/Portfolio/pexels-therato-1933239.jpg" alt="Beautiful minimalist image" style="width: 100%; max-height: 400px; object-fit: cover; margin: 0 auto;">
