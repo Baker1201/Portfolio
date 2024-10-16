@@ -1,8 +1,17 @@
-body {
-    margin: 0; /* Remove default margin */
-    padding: 60px; /* Add padding around the body */
-    font-family: 'Cormorant Garamond', serif; /* Apply the font */
-    background-color: #f8f8f8; /* Optional: Set a background color */
+/* General container for consistent padding and alignment */
+.container {
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding on the left and right */
+}
+
+/* Apply the container to the header, nav, and content */
+header img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure image is full width */
 }
 
 header nav ul {
@@ -13,7 +22,6 @@ header nav ul {
     background-color: #333;
     display: flex; /* Flexbox to ensure spacing */
     justify-content: center; /* Center the navigation */
-    text-align: center; /* Ensure text alignment is centered */
 }
 
 header nav ul li {
@@ -27,8 +35,6 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px; /* Added padding for better spacing */
-    display: inline-block; /* Ensures the entire link area is clickable */
-    text-align: center; /* Center-aligns text */
 }
 
 header nav ul li a:hover {
@@ -60,14 +66,6 @@ header nav ul li:hover .dropdown-content {
     background-color: #f1f1f1; /* Change background on hover */
 }
 
-/* Styles for the header image */
-header img {
-    display: block; /* Ensures no gap below the image */
-    max-width: 100%; /* Responsive design */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below the image */
-}
-
 /* Style the main intro section */
 .intro {
     padding: 50px 0;
@@ -82,6 +80,12 @@ header img {
     background-color: #f8f8f8;
 }
 
+/* Ensure the image, nav bar, and content have consistent width */
+header, .intro, section {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+}
+
 /* Mobile responsive styles */
 @media (max-width: 768px) {
     header nav ul {
@@ -89,17 +93,13 @@ header img {
         padding: 10px;
         margin: 0;
         align-items: center; /* Center the stacked items */
-        width: 100%; /* Ensure the navbar takes full width */
     }
 
     header nav ul li {
         margin: 10px 0; /* Add space between each menu item */
-        width: 100%; /* Make sure the items take the full width of the navbar */
-        text-align: center; /* Ensure the text is centered on mobile */
     }
 
     header nav ul li a {
         font-size: 1.5em; /* Increase font size for better tap targets */
-        width: 100%; /* Ensures the clickable area covers the entire width */
     }
 }
